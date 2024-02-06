@@ -1,24 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './styles/App.css';
+import './styles/css-reset.css';
+import CurrentCity from './components/CurrentCity'
+import WeatherForcast from './components/WeatherForcast'
+import Searchbar from './components/Searchbar'
+import SearchHistory from './components/SearchHistory'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App bg-[#879fef] border border-black">
+      <h1 className="text-2xl font-bold text-blue-600 mx-auto ">Weather App</h1>
+      <p className="text-xl font-bold text-blue-600 mx-auto ">WeatherAPI | React | TypeScript | TailWind</p>
+      <div className='container w-[800px] h-[400px] bg-[#f1f1fc] mx-auto my-20 grid gap-5 grid-cols-3 grid-rows-8 p-5 rounded-3xl'>
+        <CurrentCity></CurrentCity>
+        <WeatherForcast></WeatherForcast>
+        <Searchbar></Searchbar>
+        <SearchHistory></SearchHistory>
+      </div>
     </div>
   );
 }
