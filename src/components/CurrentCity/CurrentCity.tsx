@@ -1,8 +1,8 @@
 import Date from "./components/Date"
-import Name from "./components/Name"
+import Name from "../shared/Name"
 import Temperature from "./components/Temperature"
-import TemperatureRange from "./components/TemperatureRange"
-import WeatherIcon from "./components/WeatherIcon"
+import TemperatureRange from "../shared/TemperatureRange"
+import WeatherIcon from "../shared/WeatherIcon"
 import Meta from "./components/Meta"
 
 const CurrentCity = () => {

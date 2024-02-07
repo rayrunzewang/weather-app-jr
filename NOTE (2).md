@@ -20,7 +20,7 @@
                 - Somatosensory
         - Forecast
             - DayOfWeek[]
-                - Name
+                - day
                 - Date
                 - WeatherIcon
                 - TemperatureRange

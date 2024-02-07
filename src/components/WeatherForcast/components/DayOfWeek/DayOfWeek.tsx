@@ -1,12 +1,12 @@
-import Name from './components/Name'
+import Day from './components/Day'
 import Date from './components/Date'
-import WeatherIcon from './components/WeatherIcon'
-import TemperatureRange from './components/TemperatureRange'
+import WeatherIcon from '../../../shared/WeatherIcon'
+import TemperatureRange from '../../../shared/TemperatureRange'
 
 const DayOfWeek = () => {
   return (
     <div className='basis-1/4 bg-blue-100 overflow-hidden	'>
-      <Name></Name>
+      <Day></Day>
       <Date></Date>
       <WeatherIcon></WeatherIcon>
       <TemperatureRange></TemperatureRange>

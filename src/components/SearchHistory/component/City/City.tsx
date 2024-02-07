@@ -1,7 +1,7 @@
 import React from 'react'
-import WeatherIcon from './components/WeatherIcon'
-import Name from './components/Name'
-import TemperatureRange from './components/TemperatureRange'
+import WeatherIcon from '../../../shared/WeatherIcon'
+import Name from '../../../shared/Name'
+import TemperatureRange from '../../../shared/TemperatureRange'
 
 const City = () => {
   return (
