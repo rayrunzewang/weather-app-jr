@@ -8,7 +8,7 @@ const City = () => {
     <div className='basis-1/4 bg-blue-100 rounded-xl overflow-hidden'>
       <WeatherIcon className='w-10 mx-auto'></WeatherIcon>
       <Name>New York</Name>
-      <TemperatureRange></TemperatureRange>
+      <TemperatureRange>20 ~ 26</TemperatureRange>
     </div>
   )
 }

@@ -1,8 +1,12 @@
 import React from 'react'
 
-const TemperatureRange = () => {
+interface TemperatureRangeProps {
+  children: string;
+}
+
+const TemperatureRange = ({children}: TemperatureRangeProps) => {
   return (
-    <div className='basis-1/12 flex-auto'>18 ~ 20 shared</div>
+    <div className='basis-1/12 flex-auto'>{children}</div>
   )
 }
 
