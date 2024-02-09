@@ -1,8 +1,12 @@
 import React from 'react'
 
-const Name = () => {
+interface NameProps {
+  children: string;
+}
+
+const Name = ({children}: NameProps) => {
   return (
-    <div>Name shared</div>
+    <div>{children}</div>
   )
 }
 

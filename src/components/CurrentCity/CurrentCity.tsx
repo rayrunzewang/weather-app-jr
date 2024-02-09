@@ -9,7 +9,7 @@ const CurrentCity = () => {
   return (
     <div className="row-span-8 rounded-2xl bg-blue-100 p-3 flex	flex-col gap-1">
     <Date></Date>
-    <Name></Name>              
+    <Name>New York</Name>              
     <Temperature></Temperature>              
     <TemperatureRange></TemperatureRange>              
     <WeatherIcon className="w-28 mx-auto"></WeatherIcon>              

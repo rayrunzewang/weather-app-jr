@@ -7,7 +7,7 @@ const City = () => {
   return (
     <div className='basis-1/4 bg-blue-100 rounded-xl overflow-hidden'>
       <WeatherIcon className='w-10 mx-auto'></WeatherIcon>
-      <Name></Name>
+      <Name>New York</Name>
       <TemperatureRange></TemperatureRange>
     </div>
   )
