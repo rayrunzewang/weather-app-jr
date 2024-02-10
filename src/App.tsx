@@ -1,31 +1,16 @@
 import { useState } from 'react';
-import './styles/App.css';
-import './styles/css-reset.css';
+import { useFetch } from './hooks/useFetch';
 import CurrentCity from './components/CurrentCity';
 import WeatherForcast from './components/WeatherForcast';
 import Searchbar from './components/Searchbar';
 import SearchHistory from './components/SearchHistory';
 import BackgroundImage from './components/BackgroundImage';
+import './styles/App.css';
+import './styles/css-reset.css';
 
 function App() {
-    const [weather, setWeather] = useState({});
 
-    const handleSearch = () => {
-      fetch(`https://api.openweathermap.org/data/2.5/forecast?units=metric&q=${`beijing`},${`cn`}&appid=052b37caae519c28d90953b5a30182ca`)
-      .then(response => {
-        return response.json()
-      })
-      .then((response)=>{
-        console.log(response)
-        setWeather(response)
-      })
-      .catch(error => {
-        console.log(error)
-      });
-    }
-
-
-
+  const {weather, handleSearch} = useFetch()
 
   return (
     <BackgroundImage>
@@ -40,7 +25,6 @@ function App() {
         </div>
       </div >
     </BackgroundImage>
-
   );
 }
 
