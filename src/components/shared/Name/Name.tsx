@@ -1,6 +1,6 @@
 import React from 'react'
 
-interface NameProps {
+type NameProps = {
   children: string;
 }
 

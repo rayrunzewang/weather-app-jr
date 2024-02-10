@@ -5,14 +5,14 @@ import hail from './assets/Hail.png'
 import snow from './assets/Snow.png'
 import sunny from './assets/Sunny.png'
 
-interface WeatherIconProps {
-  className: string;
+type WeatherIconProps = {
+  width: 'w-10' | 'w-20' | 'w-28';
 }
 
-const WeatherIcon = ({ className }: WeatherIconProps) => {
+const WeatherIcon = ({ width }: WeatherIconProps) => {
   return (
     <div>
-      <img className={className} src={rain} alt="WeatherIcon" />
+      <img className={`mx-auto ${width}`} src={rain} alt="WeatherIcon" />
     </div>
   )
 }

@@ -12,7 +12,7 @@ const CurrentCity = () => {
     <Name>New York</Name>              
     <Temperature></Temperature>              
     <TemperatureRange>20 ~ 26</TemperatureRange>              
-    <WeatherIcon className="w-28 mx-auto"></WeatherIcon>              
+    <WeatherIcon width="w-28"></WeatherIcon>              
     <Meta></Meta>              
     </div>
   )

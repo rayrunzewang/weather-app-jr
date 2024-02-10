@@ -1,6 +1,6 @@
 import backgroundImageUrl from './assets/images/bg.png'
 
-interface BackgroundImageProps {
+type BackgroundImageProps = {
   children: JSX.Element;
 }
 
