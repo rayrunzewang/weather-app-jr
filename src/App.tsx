@@ -8,25 +8,13 @@ import BackgroundImage from './components/BackgroundImage';
 import './styles/App.css';
 import './styles/css-reset.css';
 
-type CurrentWeather = {
-    city: string,
-    temperature: number,
-    temperatureRange: [number, number],
-}
-
 function App() {
-  const { weather, handleSearch } = useFetch()
-  const [currentWeather, setCurrentWeather] = useState<CurrentWeather | null>(null);
+  const [city, setCity] = useState('')
+  const getInputData = (city:string) => {
+    setCity(city);
+  }
 
-  useEffect(() => {
-    if (weather) {
-      setCurrentWeather({
-        city: weather.city.name,
-        temperature: weather.list[0].main.temp,
-        temperatureRange: [weather.list[0].main.temp_min, weather.list[0].main.temp_max],
-      })
-    }
-  }, [weather]) // TODO: Custom Hook
+  const { weather, handleSearch } = useFetch(city)
 
   return (
     <BackgroundImage>
@@ -34,9 +22,9 @@ function App() {
         <h1 className="text-2xl font-bold text-[#fbd1a2] mx-auto ">Weather App</h1>
         <p className="text-xl font-bold text-[#fbd1a2] mx-auto ">WeatherAPI | React | TypeScript | TailWind</p>
         <div className='container w-[800px] h-[400px] bg-[#f1f1fc] mx-auto my-20 grid gap-5 grid-cols-3 grid-rows-8 p-5 rounded-3xl'>
-          <CurrentCity currentWeather={currentWeather}></CurrentCity>
+          <CurrentCity currentWeather={weather}></CurrentCity>
           <WeatherForcast></WeatherForcast>
-          <Searchbar onSearch={handleSearch}></Searchbar>
+          <Searchbar getInputData={getInputData} onSearch={handleSearch}></Searchbar>
           <SearchHistory></SearchHistory>
         </div>
       </div >
