@@ -1,8 +1,12 @@
 import React from 'react'
 
-const AirQuality = () => {
+type AirQualityProps = {
+  children: number;
+}
+
+const AirQuality = ({children}: AirQualityProps) => {
   return (
-    <div className=' basis-1/4 grow'>A</div>
+    <div className=' basis-1/4 grow'>{children}</div>
   )
 }
 

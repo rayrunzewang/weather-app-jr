@@ -1,4 +1,3 @@
-
 type ButtonProps = {
   onClick: () => void;
 }

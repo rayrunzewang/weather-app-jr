@@ -1,8 +1,10 @@
-import React from 'react'
+type HumidityProps = {
+  children: string;
+} ;
 
-const Humidity = () => {
+const Humidity = ({children}: HumidityProps) => {
   return (
-    <div className=' basis-1/4 grow'>H</div>
+    <div className=' basis-1/4 grow'>{children}</div>
   )
 }
 

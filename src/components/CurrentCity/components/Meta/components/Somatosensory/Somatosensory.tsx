@@ -1,8 +1,12 @@
 import React from 'react'
 
-const Somatosensory = () => {
+type SomatosensoryProps = {
+  children: number;
+}
+
+const Somatosensory = ({children}: SomatosensoryProps) => {
   return (
-    <div className='basis-1/4 grow'>S</div>
+    <div className='basis-1/4 grow'>{children + ' °'}</div>
   )
 }
 

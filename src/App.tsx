@@ -10,7 +10,7 @@ import './styles/css-reset.css';
 
 function App() {
   const [city, setCity] = useState('')
-  const getInputData = (city:string) => {
+  const getInputData = (city: string) => {
     setCity(city);
   }
 

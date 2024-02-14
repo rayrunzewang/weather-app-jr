@@ -6,7 +6,7 @@ type NameProps = {
 
 const Name = ({children}: NameProps) => {
   return (
-    <div>{children}</div>
+    <div className='text-2xl text-white'>{children}</div>
   )
 }
 

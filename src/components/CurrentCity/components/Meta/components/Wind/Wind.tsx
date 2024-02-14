@@ -1,8 +1,11 @@
-import React from 'react'
+type WindProps = {
+  children: string;
+};
 
-const Wind = () => {
+
+const Wind = ({children}: WindProps) => {
   return (
-    <div className=' basis-1/4 grow'>W</div>
+    <div className=' basis-1/4 grow'>{children}</div>
   )
 }
 
