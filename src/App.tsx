@@ -23,7 +23,7 @@ function App() {
         <p className="text-xl font-bold text-[#fbd1a2] mx-auto ">WeatherAPI | React | TypeScript | TailWind</p>
         <div className='container w-[800px] h-[400px] bg-[#f1f1fc] mx-auto my-20 grid gap-5 grid-cols-3 grid-rows-8 p-5 rounded-3xl'>
           <CurrentCity currentWeather={weather}></CurrentCity>
-          <WeatherForcast></WeatherForcast>
+          <WeatherForcast weatherForcast={weather}></WeatherForcast>
           <Searchbar getInputData={getInputData} onSearch={handleSearch}></Searchbar>
           <SearchHistory></SearchHistory>
         </div>

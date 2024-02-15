@@ -8,7 +8,7 @@ const DayOfWeek = () => {
     <div className='basis-1/4 bg-blue-100 overflow-hidden	'>
       <DayInForcast></DayInForcast>
       <DateInForcast></DateInForcast>
-      <WeatherIcon width='w-20'></WeatherIcon>
+      <WeatherIcon width='w-20' icon='clear'></WeatherIcon>
       <TemperatureRange textColor='text-black'>20 ~ 26</TemperatureRange>
     </div>
   );

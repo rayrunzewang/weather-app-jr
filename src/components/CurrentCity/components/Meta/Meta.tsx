@@ -7,7 +7,7 @@ type MetaProps = {
   currentWeather: {
     [key: string]: any;
   } | null;
-}
+};
 
 const Meta = ({currentWeather}: MetaProps) => {
   return (

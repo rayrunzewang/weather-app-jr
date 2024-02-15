@@ -1,6 +1,11 @@
-import DayOfWeek from "./components/DayOfWeek"
+import DayOfWeek from "./components/DayOfWeek";
 
-const WeatherForcast = () => {
+type WeatherForcastProps = {
+  weatherForcast: {
+    [key: string]: any;
+  } | null;
+};
+const WeatherForcast = ({ weatherForcast }: WeatherForcastProps) => {
   return (
     <div className="row-span-5 col-span-2 rounded-2xl	flex gap-3">
       <DayOfWeek></DayOfWeek>
